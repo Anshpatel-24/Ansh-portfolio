@@ -33,7 +33,7 @@ const Sidebar = () => {
     >
       <div className="flex gap-4 relative lg:justify-self-center justify-self-auto">
         {/* Profile Image */}
-        <div className="bg-gradient-to-br from-gray-800 to-gray-700 rounded-3xl lg:size-36 size-20 overflow-hidden flex justify-center items-center shadow-lg">
+        <div className="bg-gradient-to-br from-gray-800 to-gray-700 min-w-20 rounded-full lg:rounded-3xl lg:size-36 size-20 overflow-hidden flex justify-center items-center shadow-lg">
           <img src="images/profile.jpg" alt="Ansh Patel" className="w-full h-full object-cover" />
         </div>
 
