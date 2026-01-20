@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-bgBase text-textGray font-sans antialiased;
+  }
+  
+  /* Custom Scrollbar to match the dark theme */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-bgBase;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-borderDark rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-accent;
+  }
+}
+
+/* Specific styles for the Timeline in Resume */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: -34px;
+  width: 2px;
+  height: calc(100% + 50px);
+  background: #383838;
+}
+.timeline-item:last-child::before {
+  height: 0;
+}
+
+/* ul tag styles in Resume */
+ul{
+  padding-left: 8px;
+}
