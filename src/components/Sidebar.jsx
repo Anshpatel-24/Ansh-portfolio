@@ -27,7 +27,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <aside className={`bg-bgCard border border-borderDark rounded-3xl p-6 shadow-card transition-all duration-300 z-20 
+    <aside className={`bg-bgCard border border-borderDark rounded-3xl px-6 py-4 shadow-card transition-all duration-300 z-20 
       ${isActive ? "h-auto" : "h-[120px] overflow-hidden"} 
       lg:h-fit lg:sticky lg:top-10 lg:w-[280px] mb-8 lg:mb-0`}
     >
