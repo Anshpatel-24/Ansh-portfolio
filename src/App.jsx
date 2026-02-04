@@ -2,15 +2,19 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
-import MobileNavbar from './components/MobileNavbar'; // <--- 1. Import this
+import MobileNavbar from './components/MobileNavbar';
 import About from './pages/About';
 import Resume from './pages/Resume';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
+import CustomCursor from './components/CustomCursor';
+import MouseTrail from './components/FramerTrailCursor';
 
 function App() {
   return (
     <Router>
+      {/* <CustomCursor /> */}
+      {/* <MouseTrail /> */}
       <div className="min-h-screen flex justify-center items-center py-4 md:py-10 px-4">
         
         {/* Main Grid Layout */}
